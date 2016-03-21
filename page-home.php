@@ -1,13 +1,13 @@
 <?php
 /**
- * The generic template for displaying pages.
- *
+ * Template Name: Home Page Template
+ * This is the Home page template.
  * @link https://codex.wordpress.org/Template_Hierarchy
  * @package mpress
  */
 ?>
 <?php get_header(); ?>
-
+hey look at this
     <div id="primary" class="content-area row">
         <main id="main" class="site-main column sm-8" role="main">
             <?php while ( have_posts() ) : the_post(); ?>
