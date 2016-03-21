@@ -1,0 +1,31 @@
+$breakpoints: (
+    xs : 481px,
+    sm : 641px,
+    md : 769px,
+    lg : 961px,
+    xl : 1201px
+);
+
+@import 'global/_mixins';
+@import 'vendor/_datetimepicker';
+
+.mpress-hidden {
+    display: none !important;
+}
+.mpress_field_container {
+    clear: both;
+    @include clearfix;
+    display: table;
+    width: 100%;
+}
+.mpress_date_field {
+    display: table-cell;
+    padding-right: .5em;
+}
+.mpress_time_field {
+    display: table-cell;
+    width: 5em;
+}
+input[type="text"].mpress_input:disabled {
+    background: #dddddd;
+}

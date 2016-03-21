@@ -1,0 +1,29 @@
+/* -----------------------------------------------------------------------------
+ *                          ____        __  __
+ *                         / __ )__  __/ /_/ /_____  ____  _____
+ *                        / __  / / / / __/ __/ __ \/ __ \/ ___/
+ *                       / /_/ / /_/ / /_/ /_/ /_/ / / / (__  )
+ *                      /_____/\__,_/\__/\__/\____/_/ /_/____/
+ *
+ * ---------------------------------------------------------------------------*/
+input[type='submit'],
+button,
+a.button {
+    padding: .809em 1.618em;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: $sans;
+    background: $link-color;
+    color: #fff;
+    transition: all .3s ease;
+    position: relative;
+    &:hover, &:focus {
+        background: darken( $link-color, 15% );
+    }
+    &:active {
+        bottom: -1px;
+    }
+}

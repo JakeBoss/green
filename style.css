@@ -1,0 +1,48 @@
+/*******************************************************************************
+ *  Theme Name: MPress
+ *  Theme URI: http://mpress.dev
+ *  Author: Mid-West Digital Marketing
+ *  Author URI: http://midwestfamilymarketing.com
+ *  Description: A Wordpress based CMS by Mid-West Digital Marketing
+ *  Version: 1.0.0
+ *  License: GNU General Public License v2 or later
+ *  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ *  Text Domain: mpress
+ *
+ *  This theme, like WordPress, is licensed under the GPL.
+ *  Use it to make something cool, have fun, and share what you've learned with others.
+ *
+ *  ROADMAP
+ * -----------------------------------------------------------------------------
+ *  1. SCSS            : This theme uses .scss by default
+ *  2. CSS             : All of our compiled, prefixed, and minimized css files
+ *  2. INC             : All of our custom functions, filters, hooks, etc
+ *  3. TEMPLATE-PARTS  : All of our reusable partials
+ *  4. FONTS           : All of our font-packs ( font-awesome installed by default )
+ *  5. ASSETS          : All of our Design resources ( .PSD's, Documentation, ETC )
+ *  6. JS              : All of our beautifully crafted JavaScript
+ *  7. IMG             : All of our default image files
+ *  ================================ THEME FILES ===============================
+ *  => functions.php   : Define our wordpress functions
+ *  => header.php      : Page header ( all )
+ *  => footer.php      : Page footer ( all )
+ *  => index.php       : Default body
+ *  => archive.php     : Archive ( tags, cats, author ) body
+ *  => single.php      : Single post body
+ *  => sidebar.php     : Default sidebar aside
+ *  => comments.php    : Default comments section
+ *  => 404.php         : Default 404 body
+ *  => search.php      : Default search body
+ *  => page.php        : Default page template
+ *   THINGS TO NOTE
+ *  ---------------------------------------------------------------------------
+ *  1.  This file ( style.css ) is only here for theme meta information,
+ *      the "real" ( minified, prefixed, etc ) stylesheets are:
+ *          - css/style.min.css
+ *          - css/admin.min.css
+ *          - css/editor.min.css
+ *          - css/login.min.css
+ *  2.  This project currently uses each developers prefered desktop client for
+ *      scss / js compiling. Eventually, we plan to integrate GRUNT / GULP and
+ *      possibly BOWER into the build process for automation purposes
+ ******************************************************************************/
