@@ -134,6 +134,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Green-Oasis-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 811238,
+		"inputAbbreviatedPath": "\/images\/Green-Oasis-3.jpg",
+		"outputAbbreviatedPath": "\/images\/Green-Oasis-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/inc\/actions.php": {
 		"fileType": 8192,
 		"ignore": 0,

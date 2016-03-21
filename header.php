@@ -66,10 +66,16 @@
                 <?php endif; ?>
             </nav><!-- #site-navigation -->
 
+            <div class="customer-center">
+              <div class="login">
+                <p>Customer Center<a href="google.com" class="log-btn">login</a></p>
+              </div>
+            </div>
+
         </div>
     </header><!-- #masthead -->
 
-    <div class="banner-bottom clearfix">
+    <!-- <div class="banner-bottom clearfix">
         <div class="wrapper">
                 <div class="breadcrumbs_wrapper">
                     <?php do_action( 'mpress_breadcrumbs' ); ?>
@@ -83,7 +89,7 @@
                     <?php mpress_social_links(); ?>
                 </div>
         </div>
-    </div>
+    </div> -->
 
     <div id="page" class="hfeed site">
         <div id="content" class="site-content">

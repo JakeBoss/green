@@ -7,6 +7,7 @@
  */
 ?>
 <?php get_header(); ?>
+<section id="entrance">
 
     <div id="primary" class="content-area row">
         <main id="main" class="site-main column sm-8" role="main">
@@ -19,4 +20,6 @@
             <?php get_sidebar(); ?>
         </aside>
     </div><!-- #primary -->
+
+</secton>
 <?php get_footer(); ?>

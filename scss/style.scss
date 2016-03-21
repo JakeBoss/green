@@ -24,7 +24,7 @@ $gray             : #6c6c6c;
 $black            : #2b2b2b;
 $white            : #FFFFFF;
 // brand colors
-$primary-color    : #0274BE;
+$primary-color    : #FFFFFF;
 $secondary-color  : #FAFAFA;
 $font-color       : #232323;
 $light-font-color : lighten( $font-color, 40% );
@@ -129,17 +129,11 @@ body {
     height: 100%;
     padding: 0 auto;
     transition: transform .6s ease;
-    background: #fff;
+    background: red;
 }
 #content {
-    max-width: $view-width;
-    padding: .809rem;
     margin: auto;
-    background: #fff;
 }
-
-
-
 
 
 // Post Meta
@@ -186,3 +180,13 @@ body {
         font-weight: 700;
     }
  }
+
+ /*------------------------------------------------------------------------------
+  * ENTRANCE
+  * -------------------------------------------------------------------------- */
+  #entrance{
+    background-image: url("../images/Green-Oasis-3.jpg");
+    background-size: cover;
+    height: 100%;
+    width: auto;
+  }
