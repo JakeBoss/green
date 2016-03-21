@@ -1,0 +1,77 @@
+/* -----------------------------------------------------------------------------
+ *          ______                                         __
+ *         /_  __/_  ______  ____  ____ __________ _____  / /_  __  __
+ *          / / / / / / __ \/ __ \/ __ `/ ___/ __ `/ __ \/ __ \/ / / /
+ *         / / / /_/ / /_/ / /_/ / /_/ / /  / /_/ / /_/ / / / / /_/ /
+ *        /_/  \__, / .___/\____/\__, /_/   \__,_/ .___/_/ /_/\__, /
+ *            /____/_/          /____/          /_/          /____/
+ *
+ * ---------------------------------------------------------------------------*/
+hr {
+    border: solid $border-color;
+    border-width: 1px 0 0;
+    clear: both;
+    height: 0;
+    margin: 1.25em 0 1.618em;
+}
+::-moz-selection {
+    background: rgba( #000, .65 );
+    text-shadow: none;
+}
+::selection {
+    background: rgba( #000, .65 );
+    text-shadow: none;
+}
+.lead {
+    font-size: 1.21875em;
+    line-height: 1.618em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $sans;
+    font-style: normal;
+    font-decoration: none;
+    font-weight: normal;
+    line-height: 1.4em;
+    margin: 0 0 .809em 0;
+    padding: 0;
+}
+h1 {
+    font-size: 3.5em;
+}
+h2 {
+    font-size: 2.7em;
+}
+h3 {
+    font-size: 2.0em;
+}
+h4 {
+    font-size: 1.7em;
+}
+h5 {
+    font-size: 1.3em;
+}
+h6 {
+    font-size: 1em;
+}
+blockquote {
+    margin: 0 0 1.25em;
+    padding: 0.5625em 1.25em 0 1.1875em;
+    border-left: 1px solid #DDDDDD;
+    line-height: 1.618em;
+    color: lighten($font-color, 20%);
+    cite {
+        display: block;
+        font-size: 0.8125em;
+        color: lighten($font-color, 10%);
+
+        &:before {
+            content: "\2014 \0020";
+        }
+    }
+}
+.centered-text {
+    text-align: center;
+}
+.jumbo {
+    font-size: 10em;
+}

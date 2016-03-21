@@ -1,0 +1,188 @@
+// font stack
+// Avoid font imports within this file, and import the wordpress way via functions.php
+$serif            : 'Droid Serif', Georgia, 'Times New Roman', Times, serif;
+$sans             : Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$mono             : 'Consolas', 'Menlo', 'Courier', monospace;
+// Color pallete (for reference, not used anywhere in default configuration)
+$aqua             : #7FDBFF;
+$blue             : #0074D9;
+$navy             : #001F3F;
+$teal             : #39CCCC;
+$green            : #50AA0B;
+$olive            : #3D9970;
+$lime             : #01FF70;
+$yellow           : #FFDC00;
+$orange           : #ed6d2a;
+$red              : #FF4136;
+$fuchsia          : #F012BE;
+$purple           : #B10DC9;
+$maroon           : #85144B;
+$white            : #ffffff;
+$silver           : #dddddd;
+$light-silver     : #f5f5f5;
+$gray             : #6c6c6c;
+$black            : #2b2b2b;
+$white            : #FFFFFF;
+// brand colors
+$primary-color    : #0274BE;
+$secondary-color  : #FAFAFA;
+$font-color       : #232323;
+$light-font-color : lighten( $font-color, 40% );
+$link-color       : $primary-color;
+$link-focus       : darken($link-color, 10%);
+$link-hover       : $link-focus;
+$border-color     : lighten( $font-color, 75% );
+// breakpoints map
+$breakpoints: (
+    xs : 481px,
+    sm : 641px,
+    md : 769px,
+    lg : 961px,
+    xl : 1201px
+);
+// structure
+$view-width       : 1280px;
+
+/*------------------------------------------------------------------------------
+ * Vendor Imports
+ * -------------------------------------------------------------------------- */
+@import 'vendor/font-awesome/_font-awesome.scss';
+@import 'vendor/animate/_animate';
+@import 'vendor/animate/_fadeindown';
+@import 'vendor/_prism-coy';
+
+/*------------------------------------------------------------------------------
+ * Globals
+ * -------------------------------------------------------------------------- */
+@import 'global/_mixins';
+@import 'global/_equalize';
+@import 'global/_toolbox';
+@import 'global/_grid';
+
+/*------------------------------------------------------------------------------
+ * Generic Components
+ * -------------------------------------------------------------------------- */
+@import 'components/_wordpress';
+@import 'components/_forms';
+@import 'components/_buttons';
+@import 'components/_hyperlinks';
+@import 'components/_lists';
+@import 'components/_typography';
+
+/*------------------------------------------------------------------------------
+ * Specific Components
+ * -------------------------------------------------------------------------- */
+@import 'components/_masthead';
+@import 'components/_footer';
+@import 'components/_widgets';
+@import 'components/_offcanvas';
+
+
+/*------------------------------------------------------------------------------
+ * Basic Scaffolding
+ * -------------------------------------------------------------------------- */
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    position: relative;
+    font: normal normal normal 1rem/1.618em $sans;
+    width: 100%;
+    color: $font-color;
+    overflow: hidden;
+    word-wrap: break-word;
+    background: #F5F5F5;
+    // If using off-canvas menu, set "body" background on #off-canvas-page-wrapper located in components/_offcanvas.scss
+    // Because of...reasons...probably...otherwise just disregard this and proceed as usual
+    &.custom-background {
+        background-size: cover;
+    }
+    &.menu-off-canvas {
+        background-color: #333;
+    }
+}
+#makers-mark {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    @include breakpoint( 'xs' ) {
+        opacity: .1;
+    }
+    @include breakpoint( 'sm' ) {
+        opacity: .2;
+    }
+    @include breakpoint( 'md' ) {
+        opacity: .3;
+    }
+    @include breakpoint( 'lg' ) {
+        opacity: .4;
+    }
+    @include breakpoint( 'xl' ) {
+        opacity: .5;
+    }
+}
+#page {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0 auto;
+    transition: transform .6s ease;
+    background: #fff;
+}
+#content {
+    max-width: $view-width;
+    padding: .809rem;
+    margin: auto;
+    background: #fff;
+}
+
+
+
+
+
+// Post Meta
+.entry-meta {
+    color: $light-font-color;
+    font-size: .9rem;
+    padding: .809em 0;
+    a, a:link {
+        color: $light-font-color;
+        &:hover, &:focus {
+            color: $link-color;
+        }
+    }
+    ul {
+        list-style: none inside;
+        li {
+            display: inline;
+            display: inline-block;
+            margin-right: 1em;
+            zoom: 1;
+        }
+    }
+    > span {
+
+    }
+    span.icon {
+        padding: 0 .3em 0 0;
+    }
+}
+/*------------------------------------------------------------------------------
+ * TEMPORARY FUCK AROUND STUFF
+ * -------------------------------------------------------------------------- */
+#more-email {
+    text-align: center;
+    input[type='submit'] {
+        display: inline-block;
+        font-size: 4rem;
+        padding: .809em 1.618em;
+        border: 3px solid green;
+        border-radius: .3rem;
+        background: transparent;
+        margin: 0 auto 1.618em;
+        color: green;
+        font-weight: 700;
+    }
+ }

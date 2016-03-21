@@ -1,0 +1,75 @@
+/* -----------------------------------------------------------------------------
+ *             _       __               ______
+ *            | |     / /___  _________/ / __ \________  __________
+ *            | | /| / / __ \/ ___/ __  / /_/ / ___/ _ \/ ___/ ___/
+ *            | |/ |/ / /_/ / /  / /_/ / ____/ /  /  __(__  |__  )
+ *            |__/|__/\____/_/   \__,_/_/   /_/   \___/____/____/
+ *                  Default Wordpress Core Generated Classes
+ * ---------------------------------------------------------------------------*/
+.alignleft {
+    float: left;
+    margin: 0 1.618em 1.618em 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 1.618em 1.618em;
+}
+.alignnone {
+    margin: 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    width: auto !important;
+    max-width: 100%;
+    padding: .809em;
+    text-align: center;
+    img {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .wp-caption-text {
+        font-size: .9em;
+        line-height: 1.2em;
+        margin: 0;
+        padding: .809em .809em 0;
+    }
+}
+.gallery {
+    @include clearfix();
+    width: 100%;
+    @include flexbox( 'row' );
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 1.618em;
+    figure {
+        float: left;
+        padding: .4em;
+        border: 1px solid #e3e3e3;
+        background: #fff;
+        margin: 0 .4em .4em;
+        overflow: hidden;
+        position: relative;
+        a {
+            display: block;
+            background-color: #000;
+        }
+        &:hover, &:focus {
+            box-shadow: 0 0 .2em .1em rgba( #000, .3 );
+            transition: all .3s ease;
+            img {
+                opacity: .6;
+                transition: inherit;
+            }
+        }
+    }
+
+}

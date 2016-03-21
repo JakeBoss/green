@@ -1,0 +1,103 @@
+#off-canvas-page-wrapper {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    transition: transform .4s .1s ease-in;
+    box-shadow: 0 0 1.618em rgba( #000, .65 );
+    background-size: cover;
+    &.open {
+        transition: transform .4s ease-in-out;
+        transform: translateX( -280px );
+        .off-canvas-menu {
+            transform: translateX( 0 );
+        }
+    }
+    @include breakpoint( 'sm' ) {
+        transition: transform .6s .1s ease-in;
+        &.open {
+            transition: transform .6s ease-in-out;
+            transform: translateX( -380px );
+        }
+        .off-canvas-menu {
+            transform: translateX( 200px );
+            transition: transform .8s linear;
+            right: -380px;
+            width: 380px;
+        }
+    }
+}
+.off-canvas-menu {
+    display: block;
+    padding: 0;
+    position: absolute;
+    right: -280px;
+    width: 280px;
+    height: auto;
+    backface-visibility: hidden;
+    z-index: 0;
+    transform: translateX( 100px );
+    transition: transform .6s linear;
+    header {
+        @include clearfix;
+        padding: .809rem 0;
+        border-bottom: 1px solid #e3e3e3;
+    }
+    .menu-toggle {
+        background: transparent;
+        float: right;
+        border: 1px solid #e3e3e3;
+        border-radius: .3rem;
+        margin-right: .809em;
+        .icon {
+            padding: 0 .809rem 0 0;
+        }
+    }
+    .search-form  {
+        padding: .809em;
+    }
+    a, a:link {
+        display: block;
+        padding: .809em 1.618em .809em;
+        color: #fff;
+        transition: background .4s ease;
+        &:hover, &:focus {
+            background: darken( #2F323A, 5% );
+        }
+    }
+    > nav > ul, > nav > .menu > ul {
+        width: 100%;
+        margin: 0;
+        padding: 1em 0 1.618em;
+    }
+    li {
+        display: block;
+        position: relative;
+        ul.sub-menu {
+            list-style: none;
+            display: block;
+            height: auto;
+            text-align: left;
+            position: absolute;
+            width: 100%;
+            min-width: 100%;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .4s ease;
+            // Generic styles to sub-menu items
+            li {
+                display: block;
+            }
+            a, a:link {
+                padding-left: 3.2em;
+            }
+        }
+        &:focus, &.expanded {
+            > ul.sub-menu {
+                position: relative;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}

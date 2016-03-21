@@ -1,0 +1,53 @@
+body {
+    // background: transparent url('../images/login-bg.jpg') no-repeat center center;
+    // background-size: cover;
+}
+.login h1 a {
+    // background-image: url( '../images/login-logo.png' );
+    // width: 172px;
+    // height: 172px;
+    // background-size: cover;
+}
+.login form {
+    // border-radius: .3em;
+    // background: rgba( #000, 0.6);
+    // border: 1px solid rgba( 255, 255, 255, .25);
+    // box-shadow: 0 0 50px 15px rgba(255, 255, 255, .1);
+    input[type='text'], input[type='password'], input[type='checkbox'] {
+        // background: rgba( #000, 0.9 );
+        // border-radius: .3px;
+        // border: 1px solid rgba( 255, 255, 255, .25);
+        // color: #fff;
+    }
+}
+.login a, .login #backtoblog a, .login #nav a, .login h1 a {
+    // color: #999;
+    &:hover, &:focus {
+        // color: #00a0d2;
+    }
+}
+.login .button-primary, .login input[type='submit'] {
+    // background: #999;
+    // border-color: darken( #999, 10% );
+}
+.login .mpress-login-footer {
+    // margin: 30px auto;
+    // text-align: center;
+    a {
+        // text-decoration: none;
+        // font-style: italic;
+    }
+}
+.login #login_error, .login p.message {
+    // color: #fff;
+    // background: rgba(0, 0, 0, .6);
+    // border-radius: .3em;
+    // box-shadow: 0 0 15px 1px rgba(255, 255, 255, .1);
+    // border-bottom: 1px solid rgba( 255, 255, 255, .25);
+    // border-top: 1px solid rgba( 255, 255, 255, .25);
+    // border-right: 1px solid rgba( 255, 255, 255, .25);
+}
+.interim-login.login h1 a {
+    // width: 100px;
+    // height: 100px;
+}
