@@ -7,10 +7,9 @@
  */
 ?>
 <?php get_header(); ?>
-<section id="entrance">
 
     <div id="primary" class="content-area row">
-        <main id="main" class="site-main column sm-8" role="main">
+        <main id="main" class="site-main" role="main">
             <?php while ( have_posts() ) : the_post(); ?>
                 <?php get_template_part( 'template-parts/content', 'page' ); ?>
                 <?php if ( comments_open() || get_comments_number() ) : comments_template(); endif; ?>
@@ -21,5 +20,4 @@
         </aside>
     </div><!-- #primary -->
 
-</secton>
 <?php get_footer(); ?>
