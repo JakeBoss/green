@@ -7,7 +7,7 @@
  */
 ?>
 <?php get_header(); ?>
-hey look at this
+
     <div id="primary" class="content-area row">
         <main id="main" class="site-main column sm-8" role="main">
             <?php while ( have_posts() ) : the_post(); ?>
