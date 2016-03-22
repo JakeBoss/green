@@ -39,8 +39,17 @@ a.button {
   padding: 15px 30px;
   background-color: $yellow;
   border-radius: 5px;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: $sans;
-  font-weight: 300;
+  font-weight: 500;
   box-shadow: 0px 0px 25px 5px rgba($black,0.3);
+  @include breakpoint('md'){
+    font-size: 1.5em;
+  }
+}
+.call-btn{
+    background-color: $yellow;
+    right: 0;
+    padding: 10px 30px;
+    border-radius: 5px;
 }

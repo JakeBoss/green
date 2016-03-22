@@ -9,6 +9,7 @@
     border-bottom: 4px solid $yellow;
     @include clearfix;
     .wrapper {
+        padding:0 2em;
         @include flexbox( 'row' );
         flex-wrap: wrap;
         align-items: center;
@@ -221,9 +222,15 @@
         bottom: auto;
     }
 }
-.phone{
-  margin-top: 100px;
+.phone-button{
+  margin-top: 105px;
   position: fixed;
   z-index: 999;
   right: 0;
+}
+.customer{
+  display: none;
+  @include breakpoint('sm'){
+    display: inline-block;
+  }
 }
