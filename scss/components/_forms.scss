@@ -56,6 +56,30 @@ textarea {
         display: inline-block;
     }
     button, input[type='submit'] {
-        border: 1px solid $link-color;
+        background-color: $yellow !important;
     }
+}
+input {
+    border-radius: 4px !important;
+    border-bottom: 4px solid $yellow !important;
+    &[type='text'] {
+      color: rgba($black,0.5) !important;
+      font-size: .8em !important;
+      font-weight: 600 !important;
+      padding: .5em !important;
+    }
+    &#gform_submit_button_3{
+      background-color: $yellow !important;
+      border-bottom: none !important;
+      padding: 10px 80px !important;
+    }
+}
+.gform_footer{
+  margin: 0 auto;
+  text-align: center;
+}
+.gform_description{
+  font-size: 1.2em;
+  margin-bottom: 2em !important;
+  display: inline-block !important;
 }
