@@ -204,3 +204,37 @@ body {
       }
     }
   }
+  #services{
+    background-image: url("../images/house-serv.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: inline-block;
+    border-top: 4px solid $yellow;
+    border-bottom: 4px solid $yellow;
+    color: $white;
+    .title-bar{
+      margin-top: 1em;
+      h3{
+        margin: .2em;
+      }
+    }
+  }
+  .overlay-blue{
+    height: 100%;
+    width: 100%;
+    background-color: rgba($blue,0.7);
+  }
+  .action-bar {
+    background-color: rgba($white,0.7);
+    height: auto;
+    width: 700px;
+    display: inline-block;
+    padding: 1em;
+    border-radius: 5px;
+    color: $black;
+    h5{
+      margin-top: .7em;
+      font-weight: 600;
+    }
+}

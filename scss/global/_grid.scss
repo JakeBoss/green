@@ -6,7 +6,10 @@
  *                           \____/_/  /_/\__,_/
  *          Grid System: .base -> .xs -> .sm -> .md -> .lg -> .xl
  * ---------------------------------------------------------------------------*/
-
+.center{
+  margin: 0 auto;
+  text-align: center;
+}
 .row, .grid {
     margin: 0 -.809rem;
     padding: 0;
@@ -14,7 +17,11 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    &.collapse > .column, .col {
+    &.collapse > .column {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    &.collapse > .col {
         padding-right: 0;
         padding-left: 0;
     }

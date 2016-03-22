@@ -145,6 +145,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/house-serv.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.91554e+06,
+		"inputAbbreviatedPath": "\/images\/house-serv.jpg",
+		"outputAbbreviatedPath": "\/images\/house-serv.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/house.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.05933e+06,
+		"inputAbbreviatedPath": "\/images\/house.jpg",
+		"outputAbbreviatedPath": "\/images\/house.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/inc\/actions.php": {
 		"fileType": 8192,
 		"ignore": 0,
