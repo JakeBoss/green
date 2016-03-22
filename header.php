@@ -74,6 +74,11 @@
 
         </div>
     </header><!-- #masthead -->
+    <div class="phone">
+        <div class="wrap">
+          <a href="tel:7158320800" class="call-btn">(715) 832-0800</a>
+        </div>
+    </div>
 
     <!-- <div class="banner-bottom clearfix">
         <div class="wrapper">

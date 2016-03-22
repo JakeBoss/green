@@ -1,7 +1,7 @@
 // font stack
 // Avoid font imports within this file, and import the wordpress way via functions.php
 $serif            : 'Droid Serif', Georgia, 'Times New Roman', Times, serif;
-$sans             : Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$sans             : 'Open Sans', sans-serif;
 $mono             : 'Consolas', 'Menlo', 'Courier', monospace;
 // Color pallete (for reference, not used anywhere in default configuration)
 $aqua             : #7FDBFF;
@@ -11,7 +11,7 @@ $teal             : #39CCCC;
 $green            : #50AA0B;
 $olive            : #3D9970;
 $lime             : #01FF70;
-$yellow           : #FFDC00;
+$yellow           : #FCB514;
 $orange           : #ed6d2a;
 $red              : #FF4136;
 $fuchsia          : #F012BE;
@@ -129,7 +129,6 @@ body {
     height: 100%;
     padding: 0 auto;
     transition: transform .6s ease;
-    background: red;
 }
 #content {
     margin: auto;
@@ -187,8 +186,21 @@ body {
   #entrance{
     background-image: url("../images/Green-Oasis-3.jpg");
     background-size: cover;
-    height: 600px;
-    min-height: 100vh;
+    height: 400px;
     width: 100%;
     display: inline-block;
+    @include breakpoint ('md'){
+          height: 500px;
+    }
+    @include breakpoint ('lg'){
+          height: 700px;
+    }
+    .imagine{
+      margin-top: 200px;
+      color: $white;
+      text-shadow: 0px 0px 20px rgba($black,0.5);
+      h2{
+        line-height: 1em;
+      }
+    }
   }

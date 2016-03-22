@@ -124,7 +124,7 @@ if ( !function_exists( 'mpress_clean_head' ) ) {
 if ( !function_exists( 'mpress_styles' ) ) {
     function mpress_styles() {
         // register styles
-        wp_register_style( 'mpress-theme-fonts', '//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic|Roboto+Mono:400,400italic|Droid+Serif:400,400italic,700,700italic', false, null );
+        wp_register_style( 'mpress-theme-fonts', '//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic|Roboto+Mono:400,400italic|Droid+Serif:400,400italic,700,700italic|Open+Sans:400,800,700,600,300', false, null );
         wp_register_style( 'mpress-theme-style', MPRESS_STYLES_URI . 'style.css', false, null);
         // Engueue Styles
         wp_enqueue_style( 'mpress-theme-fonts' );
