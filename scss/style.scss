@@ -285,6 +285,9 @@ figure.serv-item{
     padding: 1em;
     display: inline-block;
     border-radius: 4px;
+      @include breakpoint ('md'){
+        border-radius: 0;
+      }
   }
   .create{
     color: $white;
@@ -299,4 +302,11 @@ figure.serv-item{
       line-height: 1em;
     }
   }
+}
+#garden-center{
+  background-image: url("../images/house-serv.jpg");
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  display: inline-block;
 }
