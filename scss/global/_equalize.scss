@@ -61,7 +61,7 @@ svg:not(:root) {
 }
 // Display responsive images / figures
 figure {
-    display: table;
+    // display: table;
     table-layout: fixed;
     img {
         display: block;

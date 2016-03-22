@@ -5,7 +5,7 @@ $sans             : 'Open Sans', sans-serif;
 $mono             : 'Consolas', 'Menlo', 'Courier', monospace;
 // Color pallete (for reference, not used anywhere in default configuration)
 $aqua             : #7FDBFF;
-$blue             : #0074D9;
+$blue             : #0038A8;
 $navy             : #001F3F;
 $teal             : #39CCCC;
 $green            : #50AA0B;
@@ -207,7 +207,7 @@ body {
   #services{
     background-image: url("../images/house-serv.jpg");
     background-size: cover;
-    height: 500px;
+    height: auto;
     width: 100%;
     display: inline-block;
     border-top: 4px solid $yellow;
@@ -237,4 +237,9 @@ body {
       margin-top: .7em;
       font-weight: 600;
     }
+}
+figure.serv-item img{
+  height: 150px;
+  width: auto;
+  display: inline-block;
 }
