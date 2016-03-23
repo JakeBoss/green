@@ -253,8 +253,24 @@ if ( !function_exists( 'mpress_register_menus' ) ) {
 if ( !function_exists( 'mpress_widgets_init' ) ) {
     function mpress_widgets_init() {
         register_sidebar( array (
-            'name'          => __( 'Primary Sidebar', 'mpress' ),
-            'id'            => 'primary-sidebar',
+            'name'          => __( 'Contact Column 1', 'mpress' ),
+            'id'            => 'contact-1',
+            'before_widget' => '<div id="%1$s" class="widget group %2$s">',
+            'after_widget'  => "</div>",
+            'before_title'  => '<h4 class="widget-title">',
+            'after_title'   => '</h4>'
+        ) );
+        register_sidebar( array (
+            'name'          => __( 'Contact Column 2', 'mpress' ),
+            'id'            => 'contact-2',
+            'before_widget' => '<div id="%1$s" class="widget group %2$s">',
+            'after_widget'  => "</div>",
+            'before_title'  => '<h4 class="widget-title">',
+            'after_title'   => '</h4>'
+        ) );
+        register_sidebar( array (
+            'name'          => __( 'Social', 'mpress' ),
+            'id'            => 'foot-info',
             'before_widget' => '<div id="%1$s" class="widget group %2$s">',
             'after_widget'  => "</div>",
             'before_title'  => '<h4 class="widget-title">',

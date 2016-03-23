@@ -8,7 +8,7 @@ $aqua             : #7FDBFF;
 $blue             : #0038A8;
 $navy             : #001F3F;
 $teal             : #39CCCC;
-$green            : #50AA0B;
+$green            : #024930;
 $olive            : #3D9970;
 $lime             : #01FF70;
 $yellow           : #FCB514;
@@ -368,11 +368,28 @@ figure.serv-item{
     p{font-size: .8em;}
 }
 .info{
-  padding: 2em;
+  padding: 2em 2em 0 2em;
   text-align: center;
   @include breakpoint ('sm'){
     text-align: left;
       max-width: 500px;
   }
 }
+}
+#colophon{
+  background-color: $green;
+  height: auto;
+  .location{
+    margin-bottom: 2em;
+  }
+  h3{
+    font-size: 1em;
+    line-height: .5em;
+  }
+  h4{
+    font-size: 1.5em;
+  }
+  .copyright{
+    font-size: .8em;
+  }
 }
