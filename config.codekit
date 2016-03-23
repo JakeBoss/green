@@ -134,6 +134,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/gog_drone.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75012,
+		"inputAbbreviatedPath": "\/images\/gog_drone.jpg",
+		"outputAbbreviatedPath": "\/images\/gog_drone.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/Green-Oasis-3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
