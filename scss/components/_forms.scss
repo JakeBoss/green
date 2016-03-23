@@ -72,6 +72,9 @@ input {
       background-color: $yellow !important;
       border-bottom: none !important;
       padding: 10px 80px !important;
+      &:hover,:focus{
+        background-color: rgba($blue,0.9) !important;
+      }
     }
 }
 .gform_footer{
@@ -116,4 +119,7 @@ select#input_3_4 {
 }
 .gform_wrapper .top_label .gfield_label{
   font-weight: 600 !important;
+}
+.gform_wrapper .gform_heading{
+  margin-bottom: 0 !important;
 }

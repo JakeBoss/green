@@ -26,7 +26,10 @@
             white-space: nowrap;
             &.has-logo a img{
               height: 100px;
-              padding: 20px;
+              padding: 10px 10px 10px 5px;
+              @include breakpoint('sm'){
+                padding: 20px;
+              }
             }
         }
     }
@@ -227,6 +230,12 @@
   position: fixed;
   z-index: 999;
   right: 0;
+  width: 100%;
+  text-align: center;
+  @include breakpoint('xs'){
+    width: auto;
+    text-align: right;
+  }
 }
 .customer{
   display: none;

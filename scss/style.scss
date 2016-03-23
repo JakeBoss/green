@@ -68,6 +68,7 @@ $view-width       : 1280px;
 @import 'components/_hyperlinks';
 @import 'components/_lists';
 @import 'components/_typography';
+@import 'components/_fontello';
 
 /*------------------------------------------------------------------------------
  * Specific Components
@@ -186,9 +187,14 @@ body {
   #entrance{
     background-image: url("../images/Green-Oasis-3.jpg");
     background-size: cover;
-    min-height: 100vh;
     width: 100%;
     display: inline-block;
+    @include breakpoint('sm'){
+        height: 500px;
+    }
+    @include breakpoint('md'){
+        min-height: 100vh;
+    }
     .imagine{
       margin-top: 200px;
       color: $white;
@@ -225,6 +231,11 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba($blue,0.7);
+  }
+  .overlay-green{
+    height: 100%;
+    width: 100%;
+    background-color: rgba($green,0.7);
   }
   .action-bar {
     background-color: rgba($white,0.7);
@@ -315,6 +326,7 @@ figure.serv-item{
   display: inline-block;
   border-top: 4px solid $yellow;
   border-bottom: 4px solid $yellow;
+  box-shadow: 0px -10px 45px rgba(0,0,0,0.6);
   position: relative;
   .garden{
     background-image: url("../images/gog_drone.jpg");
@@ -382,6 +394,9 @@ figure.serv-item{
       font-weight: 600;
       margin-bottom: 20px;
       display: inline-block;
+      &:hover, :focus{
+        color: $green;
+      }
     }
     .fa{
       padding-right: .5em;
@@ -409,12 +424,15 @@ figure.serv-item{
   }
   h3{
     font-size: 1em;
-    line-height: .5em;
+    line-height: 1.2em;
   }
   h4{
     font-size: 1.5em;
   }
   .copyright{
-    font-size: .8em;
+    font-size: .5em;
+    @include breakpoint ('sm'){
+      font-size: .8em;
+    }
   }
 }
