@@ -56,6 +56,11 @@ textarea {
         display: inline-block;
     }
     button, input[type='submit'] {
+<<<<<<< HEAD
+        border: 1px solid $link-color;
+    }
+}
+=======
         background-color: $yellow !important;
     }
 }
@@ -120,6 +125,7 @@ select.gfield_select {
 .gform_wrapper .gform_heading{
   margin-bottom: 0 !important;
 }
+<<<<<<< HEAD
 .gform_wrapper {
   margin: 0 auto !important;
 }
@@ -164,3 +170,6 @@ input.gform_button{
     width: 100% !important;
   }
 }
+=======
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
+>>>>>>> a0cebc5dca9098b2ff7b4e2e42ce06e70627ef0e

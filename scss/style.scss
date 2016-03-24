@@ -1,6 +1,19 @@
 // font stack
 // Avoid font imports within this file, and import the wordpress way via functions.php
 $serif            : 'Droid Serif', Georgia, 'Times New Roman', Times, serif;
+<<<<<<< HEAD
+$sans             : Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$mono             : 'Consolas', 'Menlo', 'Courier', monospace;
+// Color pallete (for reference, not used anywhere in default configuration)
+$aqua             : #7FDBFF;
+$blue             : #0074D9;
+$navy             : #001F3F;
+$teal             : #39CCCC;
+$green            : #50AA0B;
+$olive            : #3D9970;
+$lime             : #01FF70;
+$yellow           : #FFDC00;
+=======
 $sans             : 'Open Sans', sans-serif;
 $mono             : 'Consolas', 'Menlo', 'Courier', monospace;
 // Color pallete (for reference, not used anywhere in default configuration)
@@ -12,6 +25,7 @@ $green            : #024930;
 $olive            : #3D9970;
 $lime             : #01FF70;
 $yellow           : #FCB514;
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
 $orange           : #ed6d2a;
 $red              : #FF4136;
 $fuchsia          : #F012BE;
@@ -24,7 +38,11 @@ $gray             : #6c6c6c;
 $black            : #2b2b2b;
 $white            : #FFFFFF;
 // brand colors
+<<<<<<< HEAD
+$primary-color    : #0274BE;
+=======
 $primary-color    : #FFFFFF;
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
 $secondary-color  : #FAFAFA;
 $font-color       : #232323;
 $light-font-color : lighten( $font-color, 40% );
@@ -68,7 +86,10 @@ $view-width       : 1280px;
 @import 'components/_hyperlinks';
 @import 'components/_lists';
 @import 'components/_typography';
+<<<<<<< HEAD
+=======
 @import 'components/_fontello';
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
 
 /*------------------------------------------------------------------------------
  * Specific Components
@@ -130,12 +151,28 @@ body {
     height: 100%;
     padding: 0 auto;
     transition: transform .6s ease;
+<<<<<<< HEAD
+    background: #fff;
+}
+#content {
+    max-width: $view-width;
+    padding: .809rem;
+    margin: auto;
+    background: #fff;
+}
+
+
+
+
+
+=======
 }
 #content {
     margin: auto;
 }
 
 
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
 // Post Meta
 .entry-meta {
     color: $light-font-color;
@@ -179,6 +216,9 @@ body {
         color: green;
         font-weight: 700;
     }
+<<<<<<< HEAD
+ }
+=======
  }
 
  /*------------------------------------------------------------------------------
@@ -436,6 +476,7 @@ figure.serv-item{
     }
   }
 }
+<<<<<<< HEAD
 #form-window{
   display: none;
 }
@@ -570,3 +611,6 @@ figure.serv-item{
       background-color: white !important;
     }
 }
+=======
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
+>>>>>>> a0cebc5dca9098b2ff7b4e2e42ce06e70627ef0e

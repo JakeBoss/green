@@ -10,6 +10,12 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
+<<<<<<< HEAD
+    <div class="site-info wrapper">
+        <a href="<?php echo esc_url( __( 'https://midwestfamilymarketing.com', 'mpress' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mpress' ), 'mpress' ); ?></a>
+        <?php printf( esc_html__( '%1$s by %2$s.', 'mpress' ), 'A Wordpress Based CMS', '<a href="http://midwestdigitalmarketing.com" rel="designer">Mid-West Family Marketing</a>' ); ?>
+    </div><!-- .site-info -->
+=======
 <div class="row">
 <div class="wrap">
 <div class="col md-4 center">
@@ -29,6 +35,7 @@
 
 
 
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
 </footer><!-- #colophon -->
 
 </div><!-- #page -->

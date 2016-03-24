@@ -124,7 +124,11 @@ if ( !function_exists( 'mpress_clean_head' ) ) {
 if ( !function_exists( 'mpress_styles' ) ) {
     function mpress_styles() {
         // register styles
+<<<<<<< HEAD
+        wp_register_style( 'mpress-theme-fonts', '//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic|Roboto+Mono:400,400italic|Droid+Serif:400,400italic,700,700italic', false, null );
+=======
         wp_register_style( 'mpress-theme-fonts', '//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic|Roboto+Mono:400,400italic|Droid+Serif:400,400italic,700,700italic|Open+Sans:400,800,700,600,300', false, null );
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
         wp_register_style( 'mpress-theme-style', MPRESS_STYLES_URI . 'style.css', false, null);
         // Engueue Styles
         wp_enqueue_style( 'mpress-theme-fonts' );
@@ -253,6 +257,10 @@ if ( !function_exists( 'mpress_register_menus' ) ) {
 if ( !function_exists( 'mpress_widgets_init' ) ) {
     function mpress_widgets_init() {
         register_sidebar( array (
+<<<<<<< HEAD
+            'name'          => __( 'Primary Sidebar', 'mpress' ),
+            'id'            => 'primary-sidebar',
+=======
             'name'          => __( 'Contact Column 1', 'mpress' ),
             'id'            => 'contact-1',
             'before_widget' => '<div id="%1$s" class="widget group %2$s">',
@@ -271,6 +279,7 @@ if ( !function_exists( 'mpress_widgets_init' ) ) {
         register_sidebar( array (
             'name'          => __( 'Social', 'mpress' ),
             'id'            => 'foot-info',
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
             'before_widget' => '<div id="%1$s" class="widget group %2$s">',
             'after_widget'  => "</div>",
             'before_title'  => '<h4 class="widget-title">',
@@ -292,4 +301,8 @@ if ( !function_exists( 'mpress_remove_recent_comments_style' ) ) {
     } // end mpress_remove_recent_comments_style
     add_action( 'widgets_init', 'mpress_remove_recent_comments_style' );
 } // endif
+<<<<<<< HEAD
 /* -------------------------------------------------------------------------- */
+=======
+/* -------------------------------------------------------------------------- */
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c

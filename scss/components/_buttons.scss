@@ -26,6 +26,9 @@ a.button {
     &:active {
         bottom: -1px;
     }
+<<<<<<< HEAD
+}
+=======
 }
 button#form-close{
   background-color: rgba(0,0,0,0);
@@ -91,6 +94,7 @@ button#form-close{
     background-color: rgba($blue,0.9);
   }
 }
+<<<<<<< HEAD
 .close-window-btn{
   color: $yellow;
   transition: all 200ms ease-in-out;
@@ -98,3 +102,6 @@ button#form-close{
     color: $white;
   }
 }
+=======
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
+>>>>>>> a0cebc5dca9098b2ff7b4e2e42ce06e70627ef0e
