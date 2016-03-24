@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){"use strict";function e(e){e.preventDefault(),o.addClass("open")}function n(e){e.preventDefault(),o.remoceClass("open")}var o=$("#form-window"),c=o.find("#form-close"),r=$("#form-open");r.on("click",e),c.on("click",n)});

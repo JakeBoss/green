@@ -38,8 +38,22 @@
     <div id="off-canvas-page-wrapper">
     <?php get_template_part( 'template-parts/offcanvas' ); ?>
 <?php endif; ?>
-
-
+<div id="form-window">
+    <div class="close-window">
+        <button id="form-close" class="fa fa-close close-window-btn"></button>
+    </div>
+    <div class="window-content">
+        <?php do_action('content_block', array( id=>407 ) ); ?>
+    </div>
+</div>
+<div id="form-window-call">
+    <div class="close-window">
+        <button id="form-close" class="fa fa-close close-window-btn"></button>
+    </div>
+    <div class="window-content">
+        <?php do_action('content_block', array( id=>428 ) ); ?>
+    </div>
+</div>
     <header id="masthead" role="banner">
         <div class="wrapper">
             <div class="site-branding" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
@@ -68,7 +82,7 @@
 
             <div class="customer-center">
               <div class="login">
-                <p><span class="customer">Customer Center</span><a href="google.com" class="log-btn">login</a></p>
+                <p><span class="customer">Customer Center</span><a href="https://www.lawngateway.com/GreenerGrass/Login" target="_blank" class="log-btn">login</a></p>
               </div>
             </div>
 

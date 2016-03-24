@@ -436,3 +436,137 @@ figure.serv-item{
     }
   }
 }
+#form-window{
+  display: none;
+}
+#form-window.open {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    overflow: scroll;
+    h2{
+      line-height: 1em;
+      font-size: 1em;
+      text-align: center;
+      @include breakpoint ('md'){
+        text-align: left;
+        font-size: 4em;
+        padding-top: 100px;
+      }
+      @include breakpoint ('lg'){
+        text-align: left;
+        font-size: 5em;
+      }
+    }
+    .window-content{
+      padding-top: 100px;
+      padding-bottom: 2em;
+    }
+    .close-window{
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 60px;
+    }
+    .row{
+      margin: 0 !important;
+    }
+    .wrap{
+      padding: 0 1em;
+    }
+    .form {
+      background-color: rgba($blue,0.5);
+      padding: 1em;
+      border-radius: 4px;
+    }
+    input.gform_button{
+      background-color: $white !important;
+      border-bottom: none !important;
+      padding: 10px 80px !important;
+      font-weight: 700 !important;
+      color: $black;
+      &:hover,:focus{
+        color: $white;
+        background-color: rgba($yellow,0.9) !important;
+      }
+    }
+    .gform_wrapper div.validation_error {
+      background-color: white !important;
+    }
+    .gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning{
+      background-color: white !important;
+    }
+}
+#form-window-call{
+  display: none;
+}
+#form-window-call.open {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    overflow: scroll;
+    h2{
+      line-height: 1em;
+      font-size: 1em;
+      text-align: center;
+      @include breakpoint ('md'){
+        text-align: left;
+        font-size: 4em;
+        padding-top: 100px;
+      }
+      @include breakpoint ('lg'){
+        text-align: left;
+        font-size: 5em;
+      }
+    }
+    .window-content{
+      padding-top: 100px;
+      padding-bottom: 2em;
+    }
+    .close-window{
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 60px;
+    }
+    .row{
+      margin: 0 !important;
+    }
+    .wrap{
+      padding: 0 1em;
+    }
+    .form {
+      background-color: rgba($blue,0.5);
+      padding: 1em;
+      border-radius: 4px;
+    }
+    input.gform_button{
+      background-color: $white !important;
+      border-bottom: none !important;
+      padding: 10px 80px !important;
+      font-weight: 700 !important;
+      color: $black;
+      &:hover,:focus{
+        color: $white;
+        background-color: rgba($yellow,0.9) !important;
+      }
+    }
+    .gform_wrapper div.validation_error {
+      background-color: white !important;
+    }
+    .gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning{
+      background-color: white !important;
+    }
+}
