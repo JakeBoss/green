@@ -26,4 +26,64 @@ a.button {
     &:active {
         bottom: -1px;
     }
+<<<<<<< HEAD
 }
+=======
+}
+.log-btn{
+  background-color: rgba($green,0.7);
+  height: 15px;
+  width: auto;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+  &:hover,:focus{
+    background-color: rgba($blue,0.9);
+  }
+}
+.cta-btn{
+  padding: 15px 30px;
+  background-color: $yellow;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: $sans;
+  font-weight: 500;
+  box-shadow: 0px 0px 25px 5px rgba($black,0.3);
+  transition: all 200ms ease-in-out;
+  @include breakpoint('md'){
+    font-size: 1.5em;
+  }
+  &:hover,:focus{
+    background-color: rgba($blue,0.9);
+  }
+}
+.call-btn{
+    background-color: $yellow;
+    right: 0;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: $white;
+    transition: all 200ms ease-in-out;
+    &:hover, :focus{
+      color: $blue;
+    }
+}
+.act-btn{
+  background-color: $yellow;
+  padding: 10px 30px;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 200ms ease-in-out;
+  @include breakpoint('md'){
+    float: right;
+  }
+  &:hover,:focus{
+    background-color: rgba($blue,0.9);
+  }
+}
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c

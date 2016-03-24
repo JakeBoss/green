@@ -39,6 +39,7 @@ h1 {
     font-size: 3.5em;
 }
 h2 {
+<<<<<<< HEAD
     font-size: 2.7em;
 }
 h3 {
@@ -49,6 +50,31 @@ h4 {
 }
 h5 {
     font-size: 1.3em;
+=======
+    font-size: 3em;
+    font-weight: 800;
+    @include breakpoint('md'){
+      font-size: 4em;
+    }
+    @include breakpoint('lg'){
+      font-size: 5em;
+    }
+}
+h3 {
+    font-size: 2em;
+    @include breakpoint('md'){
+      font-size: 4em;
+    }
+}
+h4 {
+    font-size: 1em;
+    @include breakpoint('md'){
+      font-size: 1.7em;
+    }
+}
+h5 {
+    font-size: .9em;
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
 }
 h6 {
     font-size: 1em;

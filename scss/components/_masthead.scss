@@ -1,10 +1,24 @@
 #masthead {
+<<<<<<< HEAD
     position: relative;
     width: 100%;
     background: #2F323A;
     padding: 0;
     @include clearfix;
     .wrapper {
+=======
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    background: rgba($white,0.95);
+    padding: 0;
+    z-index: 9;
+    border-bottom: 4px solid $yellow;
+    @include clearfix;
+    .wrapper {
+        padding:0 2em;
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
         @include flexbox( 'row' );
         flex-wrap: wrap;
         align-items: center;
@@ -19,9 +33,18 @@
             padding: 0;
             margin: 0;
             white-space: nowrap;
+<<<<<<< HEAD
             &.has-logo {
                 font-size: 1rem;
                 line-height: 1rem;
+=======
+            &.has-logo a img{
+              height: 100px;
+              padding: 10px 10px 10px 5px;
+              @include breakpoint('sm'){
+                padding: 20px;
+              }
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
             }
         }
     }
@@ -42,6 +65,13 @@
             display: none;
         }
     }
+<<<<<<< HEAD
+=======
+
+    .customer-center{
+      color: $blue;
+    }
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
 }
 
 #site-navigation {
@@ -202,6 +232,10 @@
     padding: .809em 1.618em;
     background: transparent;
     transition: transform .3s ease;
+<<<<<<< HEAD
+=======
+    display: none;
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
     &.expanded {
         transform: rotate( 90deg );
     }
@@ -211,4 +245,26 @@
     &:active {
         bottom: auto;
     }
+<<<<<<< HEAD
 }
+=======
+}
+.phone-button{
+  margin-top: 105px;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  @include breakpoint('xs'){
+    width: auto;
+    text-align: right;
+  }
+}
+.customer{
+  display: none;
+  @include breakpoint('sm'){
+    display: inline-block;
+  }
+}
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c

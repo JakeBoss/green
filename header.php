@@ -58,7 +58,11 @@
                 ?>
             </div><!-- .site-branding -->
 
+<<<<<<< HEAD
             <button class="menu-toggle" aria-expanded="false" data-targets='<?php echo get_mpress_menu_target(); ?>'><i class="fa fa-bars"></i><span class="screen-reader-text"><?php esc_html_e( 'Menu', MPRESS_THEME_NAME ); ?></span></button>
+=======
+            <!-- <button class="menu-toggle" aria-expanded="false" data-targets='<?php echo get_mpress_menu_target(); ?>'><i class="fa fa-bars"></i><span class="screen-reader-text"><?php esc_html_e( 'Menu', MPRESS_THEME_NAME ); ?></span></button> -->
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
 
             <nav id="site-navigation" class="<?php echo sprintf( 'main-navigation-bar %s', get_theme_mod( 'mpress_mobile_menu', 'menu-simple' ) ); ?>" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement" aria-expanded="false">
                 <?php if( has_nav_menu( 'primary-navbar' ) ) : ?>
@@ -66,10 +70,30 @@
                 <?php endif; ?>
             </nav><!-- #site-navigation -->
 
+<<<<<<< HEAD
         </div>
     </header><!-- #masthead -->
 
     <div class="banner-bottom clearfix">
+=======
+            <div class="customer-center">
+              <div class="login">
+                <p><span class="customer">Customer Center</span><a href="google.com" class="log-btn">login</a></p>
+              </div>
+            </div>
+
+        </div>
+    </header><!-- #masthead -->
+    <div class="phone-button">
+    <div class="wrap">
+        <div class="phone">
+          <a href="tel:7158320800" class="call-btn">(715) 832-0800</a>
+        </div>
+    </div>
+    </div>
+
+    <!-- <div class="banner-bottom clearfix">
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
         <div class="wrapper">
                 <div class="breadcrumbs_wrapper">
                     <?php do_action( 'mpress_breadcrumbs' ); ?>
@@ -83,7 +107,11 @@
                     <?php mpress_social_links(); ?>
                 </div>
         </div>
+<<<<<<< HEAD
     </div>
+=======
+    </div> -->
+>>>>>>> 55a4cfbaa05dd3e246828f3c78e34e4f546e762c
 
     <div id="page" class="hfeed site">
         <div id="content" class="site-content">
